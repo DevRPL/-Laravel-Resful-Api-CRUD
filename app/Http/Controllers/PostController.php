@@ -21,11 +21,4 @@ class PostController extends Controller
 
         return new PostDetailResource($post);
     }
-
-    public function show2($id)
-    {
-        $post = Post::findOrFail($id);
-
-        return new PostDetailResource($post);
-    }
 }
